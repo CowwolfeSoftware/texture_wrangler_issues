@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Download Texture Wrangler
+    url: https://extensions.blender.org/add-ons/texture-wrangler/
+    about: Install or update the add-on from the Blender Extensions Platform.
+  - name: Ask a question
+    url: https://github.com/CowwolfeSoftware/texture_wrangler_issues/discussions
+    about: For "how do I…" questions, please use Discussions.

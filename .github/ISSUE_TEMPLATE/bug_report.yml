@@ -1,0 +1,84 @@
+name: Bug report
+description: Something in Texture Wrangler doesn't work as expected.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a problem. Please search the existing issues first, in case it has already been reported.
+
+  - type: input
+    id: blender-version
+    attributes:
+      label: Blender version
+      description: Shown in Help > About Blender.
+      placeholder: "e.g. 4.2.3 LTS"
+    validations:
+      required: true
+
+  - type: input
+    id: addon-version
+    attributes:
+      label: Texture Wrangler version
+      description: Shown in Edit > Preferences > Add-ons > Texture Wrangler.
+      placeholder: "e.g. 1.0.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Windows
+        - macOS
+        - Linux
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the problem, and what you expected to happen instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the steps that cause the problem.
+      placeholder: |
+        1. Set the source folder to a folder containing ...
+        2. Click Copy to 1K
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: file-names
+    attributes:
+      label: Texture file names
+      description: |
+        If the problem is about how files are identified or renamed, list the file names in the source folder. Only the names are needed, not the image files.
+      placeholder: |
+        Brass_BaseColor.png
+        Brass_NormalGL.png
+        Brass_Roughness.jpg
+      render: text
+
+  - type: textarea
+    id: error
+    attributes:
+      label: Error message
+      description: |
+        Paste any error text. On Windows, open Window > Toggle System Console. On macOS or Linux, start Blender from a terminal and copy the error from there.
+      render: shell
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Drag images here if a screenshot of the panel or the error would help.

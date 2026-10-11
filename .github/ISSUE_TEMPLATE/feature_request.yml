@@ -1,0 +1,32 @@
+name: Feature request
+description: Suggest an idea or improvement for Texture Wrangler.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: Describe the task or workflow, and what makes it difficult today.
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: How do you think Texture Wrangler could help? Rough ideas are welcome.
+
+  - type: dropdown
+    id: materialworks
+    attributes:
+      label: Do you use Texture Wrangler with MaterialWorks?
+      options:
+        - "Yes"
+        - "No, I use it on its own"
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else
+      description: Example file names, screenshots, or links to other tools that do this well.
